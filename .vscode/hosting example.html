@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hosting job</title>
+  </head>
+  <body>
+    <script>
+      // example of variable hosting
+      // var cannot be called before it decleration
+      console.log("I am " + job); // it will be undefined
+      var job = "web dev";
+      console.log("i am " + job);
+
+      //   example of function hosting
+      variablehosting = () => {
+        console.log("I am" + job);
+        var job = "full stack";
+        console.log("I am" + job);
+      };
+
+      variablehosting();
+    </script>
+  </body>
+</html>
