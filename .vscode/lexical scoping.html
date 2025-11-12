@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lexical scoping</title>
+  </head>
+  <body>
+    <script>
+      var a = " hello  ";
+
+      function first() {
+        var b = "i am hassan ";
+        second();
+
+        function second() {
+          var c = "shahid";
+
+          console.log(a + b + c);
+        }
+      }
+      first();
+
+      //   inner function can access to parent function and global context   but parent can not access to child function
+
+      //    And checking value of variable is scope chain
+
+      function third() {
+        var b = "this will not run";
+        console.log(a + b + c + d);
+      }
+      third;
+    </script>
+  </body>
+</html>
