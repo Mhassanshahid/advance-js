@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>use strict</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>USE strict</h1>
+
+    <script>
+      "use strict";
+      function sum(a, b) {
+        add = a + b;
+        console.log(add);
+      }
+      sum(10, 10);
+      // wrong way
+
+      function sum1(a, b) {
+        var c = a + b;
+        console.log(c);
+      }
+      sum1(10, 10);
+    </script>
+  </body>
+</html>
