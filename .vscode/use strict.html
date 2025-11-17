@@ -14,7 +14,12 @@
     <h1>USE strict</h1>
 
     <script>
-      "use strict";
+      <iframe
+        src="page.html"
+        sandbox="allow-scripts allow-same-origin"
+      ></iframe>;
+
+      ("use strict");
       function sum(a, b) {
         add = a + b;
         console.log(add);
@@ -28,5 +33,7 @@
       }
       sum1(10, 10);
     </script>
+
+    <!-- duplicate parameter are also not alloweed -->
   </body>
 </html>
