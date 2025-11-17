@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2nd exercise THIS KEYword</title>
+  </head>
+  <body>
+    <script>
+      let obj = {
+        name: "hassan",
+        fun1: function () {
+          let right = "shahid";
+          console.log(right);
+          console.log(this);
+
+          function fun2() {
+            let name = "hassan shahid";
+            //this will reffers to function 2 name
+            console.log(name);
+            console.log(this);
+            //this will reffer to global object because it's regular function
+          }
+          fun2();
+        },
+      };
+      obj.fun1();
+    </script>
+  </body>
+</html>
